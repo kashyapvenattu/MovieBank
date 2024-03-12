@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">MovieBank</h1>
+            </div>
+            <div class="menu-container">
+                <input type="text" class="search-box" placeholder="Search" />
+                <!-- <ul class="menu-list">
+                    <li class="menu-list-items active">Home</li>
+                    <li class="menu-list-items">Movies</li>
+                    <li class="menu-list-items">Series</li>
+                    <li class="menu-list-items">Popular</li>
+                </ul> -->
+            </div>
+            <div class="profile-container">
+                <img src="img/profile.jpg" alt="" class="profile-picture">
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-regular fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
+        <i class="left-menu-icon fa-regular fa-house"></i>
+        <i class="left-menu-icon fa-regular fa-user"></i>
+        <i class="left-menu-icon fa-regular fa-bookmark"></i>
+        <i class="left-menu-icon fa-solid fa-tv"></i>
+        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
+        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+    </div> -->
+    <div class="content-container">
+        <div class="featured-content" style="background: linear-gradient(to bottom,rgba(0,0,0,0),black), url('img/s-l1600.jpg');">
+            <img class="featured-title" src="img/s-l1600.jpg" alt="">
+            <p class="featured-desc">With the help of a German bounty-hunter, a freed slave sets out to rescue his wife from a brutal plantation owner in Mississippi.</p>
+            <!-- <button class="featured-button">WATCH</button> -->
+        </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">MOVIES</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list" id="movie-list">
+                    <!--  dynamic content/template here...refere  -->
+                </div>
+                <i class="fa-solid fa-chevron-right arrow"></i>
+
+                <template movie-list-item-template>
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" id="movie-list-item-img" src="" alt="">
+                        <span class="movie-list-item-title"></span><br/>
+                        <span class="movie-list-item-year"></span>
+                    </div>
+                </template>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>s
